@@ -1,20 +1,22 @@
 {
-  "id": "dev.replugged.PluginTemplate",
-  "name": "Plugin Template",
-  "description": "A plugin template",
+  "id": "eu.shadygoat.CuteAnimeBoys",
+  "name": "Cute Anime Boys",
+  "description": "Send cute anime boys in chat on an unprecedented speed",
   "author": {
-    "name": "replugged",
-    "discordID": "1000992611840049192",
-    "github": "replugged-org"
+    "name": "Lucy Dryaeva",
+    "discordID": "376079696489742338",
+    "github": "ShadiestGoat"
   },
   "version": "1.0.0",
   "updater": {
     "type": "github",
-    "id": "replugged-org/plugin-template"
+    "id": "ShadiestGoat/replugged-cuteanimeboys"
   },
   "license": "MIT",
   "type": "replugged-plugin",
   "renderer": "src/index.ts",
-  "source": "https://github.com/replugged-org/plugin-template",
-  "image": ["https://i.imgur.com/14CNs3a.png?CHANGE-THIS-URL"]
+  "source": "https://github.com/ShadiestGoat/replugged-cuteanimeboys",
+  "image": [
+    "https://cdn.discordapp.com/attachments/735886276070342696/1152016731636772965/image.png"
+  ]
 }
