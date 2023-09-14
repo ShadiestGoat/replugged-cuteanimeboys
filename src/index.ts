@@ -1,5 +1,6 @@
 import { Injector, Logger, common, types } from "replugged";
 import { type AnyRepluggedCommand } from "replugged/dist/types";
+import { cfg } from "./settings/script";
 
 const {
   ApplicationCommandOptionType
@@ -29,7 +30,8 @@ type RedditChild = {
         }
       }[]
     },
-    media_metadata: Record<string, MediaMeta>
+    media_metadata: Record<string, MediaMeta>,
+    thumbnail: string,
   }
 }
 
@@ -57,6 +59,9 @@ async function fetchReddit(subreddit: string): Promise<string> {
       const childData = child.data
 
       if (child.kind != "t3" || !childData) {
+        continue
+      }
+      if (childData.thumbnail == "nsfw" && !cfg.get("includeNSFW")) {
         continue
       }
 
@@ -144,3 +149,5 @@ export async function start(): Promise<void> {
 export function stop(): void {
   inject.uninjectAll();
 }
+
+export { Settings } from "./settings/settings"
