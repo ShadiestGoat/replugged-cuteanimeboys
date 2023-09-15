@@ -45,3 +45,9 @@ Are you the owner a dead or dying server? This is right up your ally. Its very e
 4. Send (or don't) the image URL
 
 ![](https://media.discordapp.net/attachments/735886276070342696/1152016731636772965/image.png)
+
+Also yes, sidenote, I simply **MUST** mention this somewhere, but this is a HISTORIC plugin.
+
+It was present at the fall of mankind, that is, [when powercord dieded](https://github.com/ShadiestGoat/cute-anime-boys-replugged), and then I made a [vencord version](https://github.com/ShadiestGoat/vencord-cuteanimeboys). And, I *believe* - nay - I *hope* that this plugin is what gave the push for vencord to allow for user submitted plugins that arent intended to be a part of vencord base, [see this PR, on god its so funny](https://github.com/Vendicated/Vencord/pull/108)
+
+All I'm saying is, this is a historical monument, and I deserve a statue or 2
