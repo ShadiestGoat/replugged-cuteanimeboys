@@ -1,7 +1,6 @@
-import { components, settings, util } from "replugged";
-import { cfg, defaultSettings } from "./script";
+import { components, util } from "replugged";
+import { cfg } from "./script";
 const { Flex, SwitchItem } = components;
-
 
 export function Settings(): React.ReactElement {
   return (
