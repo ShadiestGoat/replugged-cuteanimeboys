@@ -1,5 +1,7 @@
 # Replugged - Cute Anime Boys
 
+[![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=ShadiestGoat/replugged-cuteanimeboys&source=github)
+
 This is a replugged plugin made to increase the efficiency of your sending cute anime boys (and girls) to your friends. 
 
 ## Benefits
