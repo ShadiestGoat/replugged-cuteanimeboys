@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^7.33.2",
     "prettier": "^2.8.8",
     "replugged": "github:replugged-org/replugged#v4.7.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@types/react": "^18.2.21"
   }
 }
