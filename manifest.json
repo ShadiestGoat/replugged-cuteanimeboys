@@ -9,8 +9,8 @@
   },
   "version": "1.0.4",
   "updater": {
-    "type": "github",
-    "id": "ShadiestGoat/replugged-cuteanimeboys"
+    "type": "store",
+    "id": "eu.shadygoat.CuteAnimeBoys"
   },
   "license": "MIT",
   "type": "replugged-plugin",
