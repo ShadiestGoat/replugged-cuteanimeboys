@@ -1,15 +1,16 @@
 import { components, util } from "replugged";
-import { cfg } from "./script";
-const { Flex, SwitchItem } = components;
+import { cfg, options } from "./script";
+const { Flex, SelectItem } = components;
 
 export function Settings(): React.ReactElement {
   return (
     <Flex style={{ gap: "2vh" }} direction={Flex.Direction.VERTICAL}>
-      <SwitchItem
-        {...util.useSetting(cfg, "includeNSFW")}
-        note="If disabled, images marked as NSFW will be skipped">
+      <SelectItem
+        {...util.useSetting(cfg, "nsfwFilter")}
+        options={options}
+        note="The nsfw option on commands overrides this">
         Include NSFW Pictures?
-      </SwitchItem>
+      </SelectItem>
     </Flex>
   );
 }
