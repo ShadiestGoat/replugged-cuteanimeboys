@@ -1,7 +1,5 @@
-import { Injector, types } from "replugged";
+import { Injector } from "replugged";
 import { cfg, options } from "./settings/script";
-
-const { ApplicationCommandOptionType } = types;
 
 const inject = new Injector();
 // const logger = Logger.plugin("Cute Anime Boys");
@@ -23,13 +21,13 @@ export function start(): void {
         {
           name: "cat",
           description: `Should this send a cute anime cat ${gender}? (default = false)`,
-          type: ApplicationCommandOptionType.Boolean,
+          type: 5,
           required: false,
         },
         {
           name: "nsfw",
           description: `If set, it will request specifically an nsfw/not nsfw content. Set default in settings`,
-          type: ApplicationCommandOptionType.String,
+          type: 3,
           choices: options.map(({label, value}) => ({
             name: label,
             displayName: label,
@@ -39,7 +37,7 @@ export function start(): void {
         {
           name: "dry",
           description: `If set true will do a 'dry run', only showing you a preview`,
-          type: ApplicationCommandOptionType.Boolean,
+          type: 5,
           required: false,
         },
       ],
@@ -54,6 +52,7 @@ export function start(): void {
               {
                 image: {
                   url: body.img,
+                  proxyURL: body.img,
                   width: body.width,
                   height: body.height,
                 }
