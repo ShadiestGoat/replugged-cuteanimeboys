@@ -34,17 +34,15 @@ Are you the owner a dead or dying server? This is right up your ally. Its very e
 ## Features
 
 - Send random cute anime boys or girls (and their cat variations) from reddit (top 100 of all time)
-- NSFW Filter
+- NSFW Filter (goes both way **wink**)
 - :sparkles: Commands API :sparkles:
 
 ## How does it work?
 
-1. Each command variation (boy/girl, cat/not) calls the same function but with a different subreddit
-2. Using the reddit JSON API, it receives some info on the top 100 posts of all time
-3. Picks a random post. The subreddits are picked to only upload pictures, so it is 99% guaranteed to get a picture output
-  - If a person posted multiple images in 1 post, a random image is picked
-  - There are 10 backup attempts in case an image is NSFW filtered
-4. Send (or don't) the image URL
+Each command variation (boy/girl, cat/not) calls my [reddit image cache server](https://github.com/ShadiestGoat/redditImgCache), which has cached posts from relevant subreddits
+
+
+## History
 
 ![](https://media.discordapp.net/attachments/735886276070342696/1152016731636772965/image.png)
 
